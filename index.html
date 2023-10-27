@@ -17,26 +17,28 @@
 </head>
 
 <body>
-    <header>
+   
 
-        <!-- <ul class="nav justify-content-center  ">
-        <li class="nav-item">
-            <a class="nav-link active" href="#" aria-current="page">Active link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled link</a>
-        </li>
-    </ul> -->
-    </header>
-    <main>
+    <h1 id="LuongVe"></h1>
+    <h2 id="h2 " class="asda ádada">Hello Cyber Soft</h2>
+    <input id="inputId" type="text" placeholder="Nhập nội dung " value="dovannhatdn94">
+  
+   <button id="button" class="btn btn-success">Login</button>
+    <button onclick="layGiaTriInput()" class="btn btn-primary">Load</button>
 
-    </main>
-    <footer>
-        <!-- place footer here -->
-    </footer>
+
+
+    <div class="d-flex">
+        <button id="batDen">Bật đèn</button>
+        <img id="imgDen" src="./img/pic_bulboff.gif" alt="">
+        <button id="tatDen">Tắt đèn</button>
+    </div>
+  
+
+
+   <img id="image" src="https://picsum.photos/id/10/500/400" alt="Đây là img mà tôi muốn show cho các bạn xem">
+
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
@@ -49,7 +51,7 @@
 
     <!-- Main js -->
     <!--! Nên để các file js ở dưới của body => khi file js bị lỗi thì nó sẽ gây lỗi ở các đoạn code phía sau nó ! -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
 
         //Output: hiển thị trên trình duyệt
         // console.log giúp kiểm tra data ở data ở site console của dev tool - chỉ hiển thị trên devtool
@@ -230,18 +232,128 @@
         // PI = 3.14;// Đang gán lại giá trị mới là 3.14 - hằng số ko gán được giá trị mới => gây lỗi ở dòng 230
         console.log(PI);
 
-        var luong = 10;
-        console.log(luong);
-        const heSoLuongForDev = 3;
-        const tinhLuong = 10 * 4;
-        console.log(tinhLuong);
-        // const tinhLuong = 20*4;
-        heSoLuongForDev = 4;//Gây lỗi thì hằng số ko gán giá trị mới - const nó ko cho phép gán giá trị mới => gây lỗi khi thực thi đoạn code
-        console.log(heSoLuongForDev);
-        
+        // var luong = 10;
+        // console.log(luong);
+        // const heSoLuongForDev = 3;
+        // const tinhLuong = 10 * 4;
+        // console.log(tinhLuong);
+        // // const tinhLuong = 20*4;
+        // heSoLuongForDev = 4;//Gây lỗi thì hằng số ko gán giá trị mới - const nó ko cho phép gán giá trị mới => gây lỗi khi thực thi đoạn code
+        // console.log(heSoLuongForDev);
+        const luongThang10= 200000;
+        // luongThang10=100000;
+        console.log(luongThang10)
+        const pi = 3.14;
+
+        // const tongLuong = 10000*123;
+
+        // var tongLuong
         //Const nó ko cho phép khai báo giá trị trùng (tạo biến mới) => gây lỗi trong quá trình code và có thể nhận biết được
 
-    </script>
+
+        //Tính cạnh huyền của một tam giác vuông khi các bạn biết giá trị 2 cạnh góc vuông kia
+
+        /*
+           Khối 1: Input - dữ liệu đầu vào 
+            canh1= ...
+            canh2=... 
+
+            Khối 2: Progress - Các bước xử lý 
+            tìm cách để tính cạnh huyền = > sử dụng pytago => canh huyền = căn của tổng bình phương 2 canh goc vuong
+           - tính buong phuong canh1
+            - tính binh phuong canh2
+            - tông bình phuong 2 cạnh
+            - căn bậc 2 của tổng để lấy giá trị cạnh huyền
+
+            Khối 3: Out - dữ liệu đầu ra 
+            canhHuyen
+        */
+       //Khai báo cạnh 1
+        var canh1= 3;
+        //khai báo cạnh 2
+        var canh2=4;
+
+        //tính bình phuong canh 1
+        var bpCanh1 = canh1*canh1;
+        //tính bình phuong canh 2
+        var bpCanh2 = canh2*canh2;
+
+        //tính tổng bình phương 2 cạnh
+        var sumBP2Canh = bpCanh1+bpCanh2;
+        //Math.sqrt => dùng để căn bậc 2 giá trị bên trong
+        var canhHuyen = Math.sqrt(sumBP2Canh);
+
+        console.log(canhHuyen)//5
+
+        //Khói 1: các giá trị
+        var tenPhim = "adada";
+        var giaVeNguoiLon= 20000;
+        var giaVeTreEm = 10000;
+        var soVeNguoiLon =10;
+        var soVeTreEm = 5;
+        var heSoChoTuThien = 10;
+
+        //Khối 2: Các bước thực hien 
+        //tính số tiền bán vé người lớn
+        var tienBanVeNguoiLon = giaVeNguoiLon*soVeNguoiLon;
+
+        //Tính số tiền bá vé trẻ em
+        var tienBanVeTreEm = giaVeTreEm *soVeTreEm;
+        //Tính tổng doanh thu thực  = tổng tiền vé người lớn + tổng tiền vé trẻ em
+        var tongDoanhThuThuc = tienBanVeNguoiLon + tienBanVeTreEm;
+        //Tiền quyên gop = tông doanh thu thực * hé số cho tu thiên / 100
+        var tienQuyenGop = tongDoanhThuThuc*heSoChoTuThien/100;
+        // tiền lãi còn lại = tông doanh thu thuc - Tiền quyên gop
+        var tienConLai = tongDoanhThuThuc - tienQuyenGop
+       
+        //Khôi 3: 
+                //Tính Số Tiền Quyên Góp
+        console.log(tienQuyenGop)
+        //        Tiền lãi còn lại
+        console.log(tienConLai)
+
+
+
+        var count = 0;
+        count++;
+        console.log("🚀 ~ file: index.html:317 ~ count:", count)
+    //  Nhớ bôi đen ký hoặc biến cần log   Crtl + Alt + L
+    // Crtl + Option + L  (máy mac) 
+        console.log("🚀 ~ file: index.html:317 ~ count:", count)
+
+         // khi sử dụng toán tử tăng giảm bạn cần lưu ý thời điểm gọi và vị trí toán tử
+        // var a = 9;
+        // var b = 10;//10
+        // var c = --b;//9 and 9 dấu --nằn trước giá trị thì khi gắn thì sẽ sẽ thực hiện việc giẩm giá trí trước khi gán
+        // var d = b--;//9 and 8 --nằn sau giá trị thì nó sẽ gắn giá trị trước khi nó thực hiện việc giảm giá trị
+       
+        // var e = a-- + a--; //16 , 17 , 16 => 8 + 8 => 9 + 7
+        // //a -1 -1 => 7
+        // console.log('a',a)//7
+        // //b 10 -1 -1 => b 8
+        // console.log('b',b)//8   
+        // //c 9
+        // console.log('c',c)//9
+        // //d 9
+        // console.log("d",d)// test mắt thuong d= 8
+        // //e 16
+        // console.log(
+        //     "e",e
+        // )
+
+        var a = 4;
+        var b = 10;
+
+        a+= b-- * a; //41,44 a = 4 + (10 *4)= 44
+        console.log('a',a)
+        b-= 2 + ++a; // b = b - (2+ ++a) => -37 => b= 9 - (2 + 45) =9- 47= -38
+        console.log('b',b)
+
+
+       
+    </script> -->
+
+    <script src="./js/buoi2.js"></script>
 
 
 </body>
