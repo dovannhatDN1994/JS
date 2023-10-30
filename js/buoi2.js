@@ -79,9 +79,11 @@ ngược với tắt ...
 //Hàm để đổi hình img sang hình bật đèn
 function turnOn (){
     document.getElementById("imgDen").src ="./img/pic_bulbon.gif"
+    console.log(document.getElementById("imgDen"))
 }
 function turnOff (){
     document.getElementById("imgDen").src ="./img/pic_bulboff.gif"
+    console.log(document.getElementById("imgDen"))
 }
 
 document.getElementById("batDen").onclick = turnOn

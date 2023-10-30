@@ -17,9 +17,9 @@
 </head>
 
 <body>
-   
 
-    <h1 id="LuongVe"></h1>
+
+    <!-- <h1 id="LuongVe"></h1>
     <h2 id="h2 " class="asda ádada">Hello Cyber Soft</h2>
     <input id="inputId" type="text" placeholder="Nhập nội dung " value="dovannhatdn94">
   
@@ -36,7 +36,80 @@
   
 
 
-   <img id="image" src="https://picsum.photos/id/10/500/400" alt="Đây là img mà tôi muốn show cho các bạn xem">
+   <img id="image" src="https://picsum.photos/id/10/500/400" alt="Đây là img mà tôi muốn show cho các bạn xem"> -->
+
+    <!-- Tính tiền típ  -->
+
+    <!-- xây dựng ui phần mềm -->
+    <form class="w-50 mx-auto px-4 py-5 bg-light border">
+        <div class="mb-3">
+            <label for="inptTongTien" class="form-label">
+                Tổng Số Tiền Thanh Toán
+            </label>
+            <input type="number" class="form-control" id="inptTongTien" aria-describedby="emailHelp">
+           
+        </div>
+
+        <div class="mb-3">
+            <label for="selectForm" class="form-label">Bạn muốn típ bao nhiêu ?</label>
+
+            <!-- select 
+                Các bạn cần thêm các option để người chọn 
+                 <option> select</option>
+            -->
+            <select id="selectForm" class="form-select">
+                <option value="0">--Chọn để típ--</option>
+                <!--! Khi các bạn ko gọi value thì nó sẽ lấy value là nội dung của thẻ -->
+                <option value="30">30% - Tuyệt</option>
+                <option value="20">20%</option>
+                <option value="15">15%</option>
+                <option value="10">10%</option>
+                <option value="5">5%</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="inptShare" class="form-label">Muốn share bao nhiêu người</label>
+            <input type="number" class="form-control" id="inptShare">
+        </div>
+
+
+        <button id="btnTinhTien" type="button" class="btn btn-primary">Tính nào</button>
+
+
+        <p id="ketQua" class="text-center py-3">
+            <!-- c2    -->
+            <!-- Tip amount!
+                <br/>
+                <span id="ketQua"></span>
+                mỗi người  -->
+                <!-- <strong>Hello Mọi người </strong> -->
+        </p>
+    </form>
+
+    <div id="div1" style="height: 500px; background-color: green;">
+
+        <!-- <h1>Hello mọi người</h1> -->
+    </div>
+    
+    <div id="div2" style="height: 500px; background-color: black;">
+
+        <!-- <h1>Hello mọi người</h1> -->
+    </div> 
+    
+    <div id="div3" style="height: 500px; background-color: blue;">
+
+        <!-- <h1>Hello mọi người</h1> -->
+    </div>
+
+
+    <div id="chuaNoiDung"></div>
+
+
+    <button id="btnTaoThe" class="btn btn-danger">Tạo Thẻ</button>
+
+
+
 
 
     <!-- Bootstrap JavaScript Libraries -->
@@ -353,7 +426,9 @@
        
     </script> -->
 
-    <script src="./js/buoi2.js"></script>
+    <!-- <script src="./js/buoi2.js"></script> -->
+
+    <script src="./js/buoi3.js"></script>
 
 
 </body>
